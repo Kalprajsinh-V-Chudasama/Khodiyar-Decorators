@@ -14,7 +14,7 @@ function About() {
         <div className="about-text">
           <h2>About SKD Events</h2>
           <p>
-            With over 10 years of experience, SKD Events has been transforming
+            With over 20 years of experience, SKD Events has been transforming
             ordinary spaces into extraordinary experiences. Based in Ahmedabad,
             Gujarat, we've orchestrated 500+ events — from intimate birthday
             gatherings to grand corporate galas.
@@ -29,7 +29,7 @@ function About() {
               "We don't just plan events — we craft memories that last a lifetime.
               Our passion is your peace of mind."
             </blockquote>
-            <cite>— Rajesh Patel, Founder & Director, SKD Events</cite>
+            <cite>— Vijaysinh Chudasama, Founder & Director, SKD Events</cite>
           </div>
           <a href="#contact" className="btn btn-primary">Get in Touch</a>
         </div>

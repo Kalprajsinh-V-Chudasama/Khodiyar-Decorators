@@ -38,21 +38,21 @@ function ContactForm() {
               <span className="info-icon">📞</span>
               <div>
                 <h4>Phone</h4>
-                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                <a href="tel:+91 9974160324">+91 9974160324</a>
               </div>
             </div>
             <div className="info-item">
               <span className="info-icon">✉️</span>
               <div>
                 <h4>Email</h4>
-                <a href="mailto:info@skdevents.com">info@skdevents.com</a>
+                <a href="mailto:khodiyardecorators@gmail.com">khodiyardecorators@gmail.com</a>
               </div>
             </div>
             <div className="info-item">
               <span className="info-icon">📍</span>
               <div>
                 <h4>Office</h4>
-                <p>123 Event Street, Ahmedabad, Gujarat 380001</p>
+                <p>Shop-1, Greenvilla Residency, D-cabin, Sabarmati, Ahmedabad, Gujarat, 380019</p>
               </div>
             </div>
           </div>

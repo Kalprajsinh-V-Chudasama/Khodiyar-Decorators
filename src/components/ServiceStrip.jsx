@@ -1,27 +1,20 @@
 import './ServiceStrip.css';
+import { serviceStripItems } from '../data/events';
 
-const services = [
-  { icon: '💍', label: 'Weddings', highlight: true },
-  { icon: '🎂', label: 'Birthdays' },
-  { icon: '🏢', label: 'Corporate Events' },
-  { icon: '🎉', label: 'Social Gatherings' },
-  { icon: '🎪', label: 'Festivals' },
-];
-
-function ServiceStrip() {
+function ServiceStrip({ onSelectEvent }) {
   return (
     <section className="service-strip-section">
       <div className="container">
         <div className="service-strip">
-          {services.map((s) => (
-            <a
+          {serviceStripItems.map((s) => (
+            <div
               key={s.label}
-              href="#portfolio"
               className={`service-card ${s.highlight ? 'highlighted' : ''}`}
+              onClick={() => onSelectEvent(s.label)}
             >
               <span className="service-icon">{s.icon}</span>
               <span className="service-label">{s.label}</span>
-            </a>
+            </div>
           ))}
         </div>
       </div>

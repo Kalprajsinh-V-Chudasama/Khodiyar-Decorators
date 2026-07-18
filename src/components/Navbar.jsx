@@ -22,8 +22,8 @@ function Navbar() {
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="top-bar">
-        <span><a href="tel:+1234567890">+1 (234) 567-890</a></span>
-        <span><a href="mailto:info@skdevents.com">info@skdevents.com</a></span>
+        <span><a href="tel:+91 9974160324">+91 9974160324</a></span>
+        <span><a href="mailto:khodiyardecorators@gmail.com">khodiyardecorators@gmail.com</a></span>
       </div>
       <nav className="nav-inner container">
         <a href="#hero" className="logo">
