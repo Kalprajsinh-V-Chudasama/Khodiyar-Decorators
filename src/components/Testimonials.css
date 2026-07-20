@@ -1,5 +1,24 @@
 .testimonial-section {
-  background: var(--white);
+  position: relative;
+  background: var(--color-champagne-bg);
+  overflow: hidden;
+}
+
+.testimonial-quote-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.testimonial-section .container {
+  position: relative;
+  z-index: 1;
 }
 
 .testimonial-card {
@@ -13,7 +32,7 @@
   font-family: var(--font-heading);
   font-size: 5rem;
   line-height: 1;
-  color: var(--gold);
+  color: var(--color-champagne-gold);
   opacity: 0.4;
   margin-bottom: -10px;
 }
@@ -22,7 +41,7 @@
   font-family: var(--font-heading);
   font-size: 1.3rem;
   font-style: italic;
-  color: var(--navy);
+  color: var(--color-navy);
   line-height: 1.7;
   margin-bottom: 20px;
 }
@@ -35,12 +54,12 @@
 }
 
 .testimonial-author strong {
-  color: var(--navy);
+  color: var(--color-navy-steel);
   font-size: 1rem;
 }
 
 .testimonial-author span {
-  color: var(--gold);
+  color: var(--color-champagne-gold);
   font-size: 0.85rem;
   font-weight: 600;
 }
@@ -54,19 +73,19 @@
 
 .testimonial-nav button {
   background: none;
-  border: 2px solid var(--gray-200);
+  border: 2px solid rgba(216, 192, 140, 0.4);
   width: 40px;
   height: 40px;
   border-radius: 50%;
   font-size: 1rem;
   cursor: pointer;
   transition: var(--transition);
-  color: var(--text);
+  color: var(--color-navy-steel);
 }
 
 .testimonial-nav button:hover {
-  border-color: var(--gold);
-  color: var(--gold);
+  border-color: var(--color-champagne-gold);
+  color: var(--color-champagne-gold);
 }
 
 .dots {
@@ -78,13 +97,13 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--gray-200);
+  background: rgba(216, 192, 140, 0.4);
   cursor: pointer;
   transition: var(--transition);
 }
 
 .dot.active {
-  background: var(--gold);
+  background: var(--color-champagne-gold);
   width: 28px;
   border-radius: 5px;
 }

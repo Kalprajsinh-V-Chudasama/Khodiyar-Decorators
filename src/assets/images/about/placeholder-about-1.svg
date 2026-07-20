@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D8C08C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c4aa6e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- Elegant floral arrangement -->
+  <circle cx="200" cy="130" r="40" fill="#111E3C" opacity="0.15"/>
+  <circle cx="180" cy="120" r="15" fill="#111E3C" opacity="0.1"/>
+  <circle cx="220" cy="120" r="15" fill="#111E3C" opacity="0.1"/>
+  <circle cx="200" cy="110" r="12" fill="#111E3C" opacity="0.08"/>
+  <!-- Vase -->
+  <rect x="190" y="170" width="20" height="40" rx="4" fill="#111E3C" opacity="0.12"/>
+  <!-- Table -->
+  <rect x="120" y="210" width="160" height="8" rx="4" fill="#111E3C" opacity="0.1"/>
+</svg>

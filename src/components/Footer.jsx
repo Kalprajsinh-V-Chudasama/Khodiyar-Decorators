@@ -1,8 +1,19 @@
+import { sectionImages } from '../assets/images';
 import './Footer.css';
 
 function Footer() {
+  const footerImg = sectionImages.footer;
+
   return (
     <footer className="footer">
+      <img
+        src={footerImg.src}
+        alt=""
+        role="presentation"
+        className="footer-bg-image"
+        loading="lazy"
+      />
+      <div className="footer-overlay"></div>
       <div className="container footer-grid">
         <div className="footer-col footer-brand">
           <a href="#hero" className="logo">

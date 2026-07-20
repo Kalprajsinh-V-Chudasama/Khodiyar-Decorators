@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2747;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#33456B;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="warm" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#D8C08C;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#D8C08C;stop-opacity:0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a3f56;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#111E3C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect width="1200" height="900" fill="url(#warm)"/>
+  <!-- Floor -->
+  <rect x="0" y="600" width="1200" height="300" fill="url(#floor)"/>
+  <!-- String lights -->
+  <path d="M0,150 Q300,200 600,150 Q900,100 1200,150" stroke="#D8C08C" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M0,200 Q300,250 600,200 Q900,150 1200,200" stroke="#D8C08C" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <!-- Light bulbs -->
+  <circle cx="150" cy="170" r="8" fill="#D8C08C" opacity="0.8"/>
+  <circle cx="300" cy="190" r="6" fill="#D8C08C" opacity="0.7"/>
+  <circle cx="450" cy="175" r="8" fill="#D8C08C" opacity="0.9"/>
+  <circle cx="600" cy="155" r="7" fill="#D8C08C" opacity="0.8"/>
+  <circle cx="750" cy="140" r="8" fill="#D8C08C" opacity="0.7"/>
+  <circle cx="900" cy="135" r="6" fill="#D8C08C" opacity="0.9"/>
+  <circle cx="1050" cy="155" r="7" fill="#D8C08C" opacity="0.8"/>
+  <!-- Tables -->
+  <ellipse cx="300" cy="650" rx="120" ry="30" fill="#1a2747" stroke="#D8C08C" stroke-width="1" opacity="0.6"/>
+  <ellipse cx="600" cy="680" rx="130" ry="32" fill="#1a2747" stroke="#D8C08C" stroke-width="1" opacity="0.5"/>
+  <ellipse cx="900" cy="650" rx="120" ry="30" fill="#1a2747" stroke="#D8C08C" stroke-width="1" opacity="0.6"/>
+  <!-- Centerpieces -->
+  <rect x="285" y="610" width="30" height="40" rx="4" fill="#D8C08C" opacity="0.3"/>
+  <rect x="585" y="640" width="30" height="40" rx="4" fill="#D8C08C" opacity="0.25"/>
+  <rect x="885" y="610" width="30" height="40" rx="4" fill="#D8C08C" opacity="0.3"/>
+  <!-- Floral elements -->
+  <circle cx="300" cy="600" r="20" fill="#c4aa6e" opacity="0.3"/>
+  <circle cx="290" cy="595" r="12" fill="#D8C08C" opacity="0.25"/>
+  <circle cx="310" cy="595" r="12" fill="#D8C08C" opacity="0.25"/>
+  <circle cx="600" cy="630" r="22" fill="#c4aa6e" opacity="0.25"/>
+  <circle cx="900" cy="600" r="20" fill="#c4aa6e" opacity="0.3"/>
+  <!-- Warm ambient glow -->
+  <circle cx="600" cy="400" r="300" fill="#D8C08C" opacity="0.05"/>
+  <!-- Placeholder label -->
+  <text x="600" y="820" text-anchor="middle" fill="#D8C08C" font-family="Georgia, serif" font-size="18" opacity="0.5">PLACEHOLDER — Elegant Wedding Reception</text>
+</svg>

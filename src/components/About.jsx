@@ -1,14 +1,32 @@
+import { aboutImages } from '../assets/images';
 import './About.css';
 
 function About() {
+  const { main, secondary, tertiary } = aboutImages;
+
   return (
     <section id="about" className="section about-section">
       <div className="container about-grid">
         <div className="about-images">
           <div className="collage">
-            <div className="collage-main"></div>
-            <div className="collage-1"></div>
-            <div className="collage-2"></div>
+            <img
+              src={main.src}
+              alt={main.alt}
+              className="collage-main"
+              loading="lazy"
+            />
+            <img
+              src={secondary.src}
+              alt={secondary.alt}
+              className="collage-1"
+              loading="lazy"
+            />
+            <img
+              src={tertiary.src}
+              alt={tertiary.alt}
+              className="collage-2"
+              loading="lazy"
+            />
           </div>
         </div>
         <div className="about-text">

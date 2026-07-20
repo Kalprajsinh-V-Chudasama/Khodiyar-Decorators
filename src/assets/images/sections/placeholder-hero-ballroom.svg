@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#111E3C;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#1a2747;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#33456B;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" style="stop-color:#D8C08C;stop-opacity:0.12" />
+      <stop offset="100%" style="stop-color:#D8C08C;stop-opacity:0" />
+    </radialGradient>
+    <linearGradient id="floor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2747;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#111E3C;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#centerGlow)"/>
+  <!-- Grand chandelier -->
+  <g transform="translate(960, 120)" opacity="0.5">
+    <line x1="0" y1="-80" x2="0" y2="0" stroke="#D8C08C" stroke-width="2"/>
+    <ellipse cx="0" cy="10" rx="80" ry="15" fill="none" stroke="#D8C08C" stroke-width="1.5"/>
+    <circle cx="-60" cy="20" r="6" fill="#D8C08C" opacity="0.8"/>
+    <circle cx="-30" cy="25" r="5" fill="#D8C08C" opacity="0.7"/>
+    <circle cx="0" cy="28" r="6" fill="#D8C08C" opacity="0.9"/>
+    <circle cx="30" cy="25" r="5" fill="#D8C08C" opacity="0.7"/>
+    <circle cx="60" cy="20" r="6" fill="#D8C08C" opacity="0.8"/>
+    <circle cx="-45" cy="30" r="4" fill="#D8C08C" opacity="0.6"/>
+    <circle cx="45" cy="30" r="4" fill="#D8C08C" opacity="0.6"/>
+  </g>
+  <!-- Side chandeliers -->
+  <g transform="translate(400, 100)" opacity="0.3">
+    <line x1="0" y1="-50" x2="0" y2="0" stroke="#D8C08C" stroke-width="1"/>
+    <ellipse cx="0" cy="5" rx="50" ry="10" fill="none" stroke="#D8C08C" stroke-width="1"/>
+    <circle cx="-35" cy="12" r="4" fill="#D8C08C" opacity="0.7"/>
+    <circle cx="0" cy="15" r="4" fill="#D8C08C" opacity="0.8"/>
+    <circle cx="35" cy="12" r="4" fill="#D8C08C" opacity="0.7"/>
+  </g>
+  <g transform="translate(1520, 100)" opacity="0.3">
+    <line x1="0" y1="-50" x2="0" y2="0" stroke="#D8C08C" stroke-width="1"/>
+    <ellipse cx="0" cy="5" rx="50" ry="10" fill="none" stroke="#D8C08C" stroke-width="1"/>
+    <circle cx="-35" cy="12" r="4" fill="#D8C08C" opacity="0.7"/>
+    <circle cx="0" cy="15" r="4" fill="#D8C08C" opacity="0.8"/>
+    <circle cx="35" cy="12" r="4" fill="#D8C08C" opacity="0.7"/>
+  </g>
+  <!-- Decorative arches in background -->
+  <path d="M300,400 Q300,250 450,250 Q600,250 600,400" stroke="#D8C08C" stroke-width="1" fill="none" opacity="0.15"/>
+  <path d="M700,400 Q700,200 960,200 Q1220,200 1220,400" stroke="#D8C08C" stroke-width="1" fill="none" opacity="0.12"/>
+  <path d="M1320,400 Q1320,250 1470,250 Q1620,250 1620,400" stroke="#D8C08C" stroke-width="1" fill="none" opacity="0.15"/>
+  <!-- Floor reflection -->
+  <rect x="0" y="750" width="1920" height="330" fill="url(#floor)"/>
+  <!-- Floor tiles hint -->
+  <g opacity="0.05" stroke="#D8C08C" stroke-width="0.5">
+    <line x1="0" y1="800" x2="1920" y2="800"/>
+    <line x1="0" y1="850" x2="1920" y2="850"/>
+    <line x1="0" y1="900" x2="1920" y2="900"/>
+    <line x1="0" y1="950" x2="1920" y2="950"/>
+    <line x1="0" y1="1000" x2="1920" y2="1000"/>
+  </g>
+  <!-- Ambient particles -->
+  <circle cx="200" cy="300" r="2" fill="#D8C08C" opacity="0.3"/>
+  <circle cx="500" cy="200" r="1.5" fill="#D8C08C" opacity="0.25"/>
+  <circle cx="800" cy="350" r="2" fill="#D8C08C" opacity="0.2"/>
+  <circle cx="1100" cy="250" r="1.5" fill="#D8C08C" opacity="0.3"/>
+  <circle cx="1400" cy="300" r="2" fill="#D8C08C" opacity="0.25"/>
+  <circle cx="1700" cy="200" r="1.5" fill="#D8C08C" opacity="0.2"/>
+</svg>

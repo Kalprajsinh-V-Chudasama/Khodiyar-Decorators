@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <pattern id="geo" patternUnits="userSpaceOnUse" width="50" height="50">
+      <path d="M25,0 L50,25 L25,50 L0,25 Z" fill="none" stroke="#D8C08C" stroke-width="0.5" opacity="0.3"/>
+      <circle cx="25" cy="25" r="3" fill="none" stroke="#D8C08C" stroke-width="0.3" opacity="0.2"/>
+    </pattern>
+  </defs>
+  <rect width="200" height="200" fill="url(#geo)"/>
+</svg>

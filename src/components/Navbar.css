@@ -4,32 +4,8 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background: transparent;
+  background: var(--color-navy);
   transition: var(--transition);
-}
-
-.navbar.scrolled {
-  background: var(--white);
-  box-shadow: var(--shadow);
-}
-
-.top-bar {
-  background: var(--navy);
-  color: var(--white);
-  font-size: 0.8rem;
-  padding: 6px 30px;
-  display: flex;
-  justify-content: flex-end;
-  gap: 30px;
-}
-
-.top-bar a {
-  color: var(--gold);
-  transition: var(--transition);
-}
-
-.top-bar a:hover {
-  color: var(--gold-light);
 }
 
 .nav-inner {
@@ -46,11 +22,11 @@
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--color-champagne-bg);
 }
 
-.scrolled .logo {
-  color: var(--navy);
+.logo:hover {
+  text-decoration: none;
 }
 
 .logo-icon {
@@ -58,7 +34,7 @@
 }
 
 .logo-accent {
-  color: var(--gold);
+  color: var(--color-champagne-gold);
 }
 
 .nav-links {
@@ -70,7 +46,7 @@
 .nav-links a {
   font-size: 0.95rem;
   font-weight: 500;
-  color: var(--text);
+  color: var(--color-champagne-bg);
   position: relative;
   padding: 4px 0;
   transition: var(--transition);
@@ -83,7 +59,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--gold);
+  background: var(--color-champagne-gold);
   transition: var(--transition);
 }
 
@@ -92,13 +68,15 @@
 }
 
 .nav-links a:hover {
-  color: var(--gold);
+  color: var(--color-champagne-gold);
+  text-decoration: none;
 }
 
 .nav-cta {
   padding: 8px 20px;
   font-size: 0.85rem;
   margin-left: 20px;
+  color: var(--color-navy) !important;
 }
 
 .hamburger {
@@ -115,7 +93,7 @@
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--navy);
+  background: var(--color-champagne-bg);
   border-radius: 2px;
   transition: var(--transition);
 }
@@ -133,20 +111,13 @@
 }
 
 @media (max-width: 768px) {
-  .top-bar {
-    justify-content: center;
-    gap: 15px;
-    font-size: 0.7rem;
-    padding: 5px 15px;
-  }
-
   .nav-links {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background: var(--white);
+    background: var(--color-navy);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -171,9 +142,5 @@
   .hamburger {
     display: flex;
     z-index: 2;
-  }
-
-  .nav-links.open + .hamburger span {
-    background: var(--navy);
   }
 }

@@ -1,3 +1,4 @@
+import { sectionImages } from '../assets/images';
 import './DarkServices.css';
 
 const services = [
@@ -10,8 +11,17 @@ const services = [
 ];
 
 function DarkServices() {
+  const patternImg = sectionImages.darkServicesPattern;
+
   return (
     <section id="services" className="dark-services">
+      <img
+        src={patternImg.src}
+        alt=""
+        role="presentation"
+        className="dark-services-pattern"
+        loading="lazy"
+      />
       <div className="container">
         <div className="section-title">
           <h2 style={{ color: 'var(--white)' }}>Our Services</h2>

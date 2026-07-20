@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './Navbar.css';
 
 const menuItems = [
@@ -10,21 +10,10 @@ const menuItems = [
 ];
 
 function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 60);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <div className="top-bar">
-        <span><a href="tel:+91 9974160324">+91 9974160324</a></span>
-        <span><a href="mailto:khodiyardecorators@gmail.com">khodiyardecorators@gmail.com</a></span>
-      </div>
+    <header className="navbar">
       <nav className="nav-inner container">
         <a href="#hero" className="logo">
           <span className="logo-icon">✨</span>

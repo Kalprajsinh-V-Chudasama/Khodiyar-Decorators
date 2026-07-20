@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { sectionImages } from '../assets/images';
 import './Testimonials.css';
 
 const testimonials = [
@@ -21,6 +22,7 @@ const testimonials = [
 
 function Testimonials() {
   const [index, setIndex] = useState(0);
+  const quoteImg = sectionImages.testimonialQuote;
 
   const prev = () => setIndex((i) => (i === 0 ? testimonials.length - 1 : i - 1));
   const next = () => setIndex((i) => (i === testimonials.length - 1 ? 0 : i + 1));
@@ -29,12 +31,19 @@ function Testimonials() {
 
   return (
     <section className="section testimonial-section">
+      <img
+        src={quoteImg.src}
+        alt=""
+        role="presentation"
+        className="testimonial-quote-bg"
+        loading="lazy"
+      />
       <div className="container">
         <div className="section-title">
           <h2>What Our Clients Say</h2>
         </div>
         <div className="testimonial-card">
-          <div className="quote-icon">"</div>
+          <div className="quote-icon">&ldquo;</div>
           <blockquote>{t.quote}</blockquote>
           <div className="testimonial-author">
             <strong>{t.name}</strong>

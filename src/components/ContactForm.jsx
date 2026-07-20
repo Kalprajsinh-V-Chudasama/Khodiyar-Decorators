@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import './ContactForm.css';
 
 const eventTypes = [
@@ -14,6 +15,8 @@ function ContactForm() {
   const [form, setForm] = useState({
     name: '', email: '', phone: '', eventType: '', eventDate: '', message: '',
   });
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -21,8 +24,29 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Thank you! We will get back to you shortly.');
-    setForm({ name: '', email: '', phone: '', eventType: '', eventDate: '', message: '' });
+    setError('');
+
+    emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: form.name,
+        from_email: form.email,
+        phone: form.phone,
+        event_type: form.eventType,
+        event_date: form.eventDate,
+        message: form.message,
+        to_email: 'khodiyardecorators@gmail.com',
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+      .then(() => {
+        setSubmitted(true);
+        setForm({ name: '', email: '', phone: '', eventType: '', eventDate: '', message: '' });
+      })
+      .catch(() => {
+        setError('Failed to send message. Please try again.');
+      });
   };
 
   return (
@@ -57,6 +81,10 @@ function ContactForm() {
             </div>
           </div>
           <form className="contact-form" onSubmit={handleSubmit}>
+            {submitted && (
+              <div className="form-success">Thank you! We'll get back to you shortly.</div>
+            )}
+            {error && <div className="form-error">{error}</div>}
             <div className="form-row">
               <input type="text" name="name" placeholder="Your Name" value={form.name} onChange={handleChange} required />
               <input type="email" name="email" placeholder="Email Address" value={form.email} onChange={handleChange} required />
@@ -77,6 +105,7 @@ function ContactForm() {
           </form>
         </div>
       </div>
+      
     </section>
   );
 }

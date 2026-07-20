@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2747;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111E3C;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="skyglow" cx="50%" cy="20%" r="60%">
+      <stop offset="0%" style="stop-color:#33456B;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#111E3C;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect width="1200" height="900" fill="url(#skyglow)"/>
+  <!-- Outdoor tent canopy -->
+  <path d="M100,250 L600,100 L1100,250" stroke="#D8C08C" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M100,250 Q350,200 600,250 Q850,300 1100,250" fill="#33456B" opacity="0.15"/>
+  <!-- String lights across tent -->
+  <path d="M100,250 Q350,220 600,250 Q850,280 1100,250" stroke="#D8C08C" stroke-width="1" fill="none" opacity="0.5"/>
+  <circle cx="200" cy="238" r="5" fill="#D8C08C" opacity="0.7"/>
+  <circle cx="350" cy="228" r="4" fill="#D8C08C" opacity="0.6"/>
+  <circle cx="500" cy="235" r="5" fill="#D8C08C" opacity="0.8"/>
+  <circle cx="650" cy="248" r="4" fill="#D8C08C" opacity="0.7"/>
+  <circle cx="800" cy="258" r="5" fill="#D8C08C" opacity="0.6"/>
+  <circle cx="950" cy="252" r="4" fill="#D8C08C" opacity="0.7"/>
+  <!-- People silhouettes (mingling) -->
+  <g opacity="0.25" fill="#111E3C">
+    <circle cx="200" cy="520" r="15"/>
+    <rect x="188" y="535" width="24" height="50" rx="8"/>
+    <circle cx="250" cy="515" r="14"/>
+    <rect x="239" y="529" width="22" height="55" rx="8"/>
+    <circle cx="400" cy="525" r="13"/>
+    <rect x="389" y="538" width="22" height="48" rx="8"/>
+    <circle cx="450" cy="518" r="15"/>
+    <rect x="438" y="533" width="24" height="52" rx="8"/>
+    <circle cx="600" cy="520" r="14"/>
+    <rect x="589" y="534" width="22" height="50" rx="8"/>
+    <circle cx="750" cy="522" r="13"/>
+    <rect x="739" y="535" width="22" height="50" rx="8"/>
+    <circle cx="800" cy="516" r="15"/>
+    <rect x="788" y="531" width="24" height="54" rx="8"/>
+    <circle cx="950" cy="520" r="14"/>
+    <rect x="939" y="534" width="22" height="50" rx="8"/>
+    <circle cx="1000" cy="525" r="13"/>
+    <rect x="989" y="538" width="22" height="48" rx="8"/>
+  </g>
+  <!-- Catering stations -->
+  <rect x="100" y="600" width="300" height="15" rx="4" fill="#33456B" opacity="0.4"/>
+  <rect x="800" y="600" width="300" height="15" rx="4" fill="#33456B" opacity="0.4"/>
+  <!-- Food items on stations -->
+  <circle cx="180" cy="595" r="12" fill="#D8C08C" opacity="0.2"/>
+  <circle cx="250" cy="595" r="10" fill="#D8C08C" opacity="0.15"/>
+  <circle cx="320" cy="595" r="12" fill="#D8C08C" opacity="0.2"/>
+  <circle cx="880" cy="595" r="12" fill="#D8C08C" opacity="0.2"/>
+  <circle cx="950" cy="595" r="10" fill="#D8C08C" opacity="0.15"/>
+  <circle cx="1020" cy="595" r="12" fill="#D8C08C" opacity="0.2"/>
+  <!-- Ground -->
+  <rect x="0" y="680" width="1200" height="220" fill="#0f1a2e" opacity="0.5"/>
+  <!-- Placeholder label -->
+  <text x="600" y="820" text-anchor="middle" fill="#D8C08C" font-family="Georgia, serif" font-size="18" opacity="0.5">PLACEHOLDER — Social & Community Gathering</text>
+</svg>

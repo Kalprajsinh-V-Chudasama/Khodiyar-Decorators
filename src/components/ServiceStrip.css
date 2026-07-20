@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 12px;
-  background: var(--white);
+  background: var(--color-white);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   padding: 20px;
@@ -25,33 +25,40 @@
   text-decoration: none;
   transition: var(--transition);
   cursor: pointer;
-  background: var(--off-white);
+  background: var(--color-champagne-bg);
+  border: 1px solid rgba(216, 192, 140, 0.4);
 }
 
 .service-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow);
+  text-decoration: none;
 }
 
 .service-card.highlighted {
-  background: var(--gold);
-  color: var(--navy);
+  background: var(--color-champagne-gold);
+  border-color: var(--color-champagne-gold);
 }
 
 .service-card.highlighted .service-label {
-  color: var(--navy);
+  color: var(--color-navy);
   font-weight: 700;
 }
 
 .service-icon {
   font-size: 2rem;
   line-height: 1;
+  color: var(--color-navy-steel);
+}
+
+.service-card.highlighted .service-icon {
+  color: var(--color-navy);
 }
 
 .service-label {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--text);
+  color: var(--color-navy);
   text-align: center;
 }
 

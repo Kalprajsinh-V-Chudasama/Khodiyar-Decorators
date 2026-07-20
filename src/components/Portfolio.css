@@ -1,5 +1,5 @@
 .portfolio-section {
-  background: var(--off-white);
+  background: var(--color-champagne-bg);
 }
 
 .portfolio-grid {
@@ -9,7 +9,7 @@
 }
 
 .portfolio-card {
-  background: var(--white);
+  background: var(--color-white);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -28,12 +28,24 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background: linear-gradient(135deg, #33456B 0%, #111E3C 100%);
+}
+
+.portfolio-img-file {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-card:hover .portfolio-img-file {
+  transform: scale(1.05);
 }
 
 .portfolio-img-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(17, 30, 60, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,8 +61,8 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: var(--gold);
-  color: var(--navy);
+  background: var(--color-champagne-gold);
+  color: var(--color-navy);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,19 +83,21 @@
 .portfolio-info h3 {
   margin-bottom: 10px;
   font-size: 1.3rem;
+  color: var(--color-navy);
 }
 
 .portfolio-info p {
   font-size: 0.9rem;
   margin-bottom: 16px;
+  color: var(--color-navy-steel);
 }
 
 .view-btn {
   padding: 8px 20px;
   font-size: 0.85rem;
   background: none;
-  border: 2px solid var(--gold);
-  color: var(--gold);
+  border: 2px solid var(--color-champagne-gold);
+  color: var(--color-champagne-gold);
   border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
@@ -91,8 +105,9 @@
 }
 
 .view-btn:hover {
-  background: var(--gold);
-  color: var(--white);
+  background: var(--color-champagne-gold);
+  color: var(--color-navy);
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {

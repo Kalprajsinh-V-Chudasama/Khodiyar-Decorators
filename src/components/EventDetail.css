@@ -1,5 +1,7 @@
 .event-detail {
   padding: 120px 0 60px;
+  background: var(--color-champagne-bg);
+  min-height: 100vh;
 }
 
 .back-btn {
@@ -21,7 +23,7 @@
 }
 
 .event-detail-header h1 {
-  color: var(--white);
+  color: var(--color-champagne-bg);
   font-size: 3rem;
 }
 
@@ -32,17 +34,19 @@
 
 .event-detail-body h2 {
   margin-bottom: 16px;
+  color: var(--color-navy);
 }
 
 .event-detail-body p {
   margin-bottom: 24px;
   font-size: 1.05rem;
+  color: var(--color-navy-steel);
 }
 
 .event-detail-body h3 {
   font-size: 1.4rem;
   margin-bottom: 12px;
-  color: var(--gold);
+  color: var(--color-champagne-gold);
 }
 
 .event-detail-body ul {
@@ -55,15 +59,15 @@
 
 .event-detail-body ul li {
   padding: 10px 14px;
-  background: var(--off-white);
+  background: var(--color-white);
   border-radius: var(--radius);
   font-size: 0.95rem;
-  color: var(--text);
+  color: var(--color-navy);
 }
 
 .event-detail-body ul li::before {
   content: '✓ ';
-  color: var(--gold);
+  color: var(--color-champagne-gold);
   font-weight: 700;
 }
 

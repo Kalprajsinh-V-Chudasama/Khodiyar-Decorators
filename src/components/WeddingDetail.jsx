@@ -1,3 +1,4 @@
+import WeddingGallery from './WeddingGallery';
 import './EventDetail.css';
 
 function WeddingDetail({ onBack }) {
@@ -28,6 +29,7 @@ function WeddingDetail({ onBack }) {
             <button className="btn btn-primary" onClick={() => onBack(true)}>Plan Your Wedding</button>
           </div>
         </div>
+        <WeddingGallery />
       </div>
     </section>
   );
